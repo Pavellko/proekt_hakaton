@@ -12,4 +12,10 @@ qp = QPixmap('int.jpg')
 ui.label.setPixmap(qp)
 ui.show()
 
+def inp():
+    text = ui.lineEdit.text()
+    ui.label_2.setText(text)
+
+ui.pushButton.clicked.connect(inp)
+
 app.exec_()
