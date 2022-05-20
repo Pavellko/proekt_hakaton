@@ -6,9 +6,9 @@ app = QApplication([])
 ui = uic.loadUi("interfeis.ui")
 
 ui.setWindowTitle('Моя программа')
-ui.setFixedSize(568, 290)
+ui.setFixedSize(570, 290)
 
-qp = QPixmap('int.jpg')
+qp = QPixmap('int2.jpg')
 qp2 = QPixmap('logo1.png')
 ui.label.setPixmap(qp)
 ui.label_3.setPixmap(qp2)
