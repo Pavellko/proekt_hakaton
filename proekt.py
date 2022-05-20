@@ -9,12 +9,14 @@ ui.setWindowTitle('Моя программа')
 ui.setFixedSize(568, 290)
 
 qp = QPixmap('int.jpg')
+qp2 = QPixmap('logo1.png')
 ui.label.setPixmap(qp)
+ui.label_3.setPixmap(qp2)
 ui.show()
 
 def inp():
     text = ui.lineEdit.text()
-    ui.label_2.setText(text)
+    ui.label_2.setText("Привет!" + text)
 
 ui.pushButton.clicked.connect(inp)
 
